@@ -1,22 +1,22 @@
 title: "Zhengkang Zhang"
-description: "Academic homepage of Zhengkang Zhang."
+description: "Zhengkang Zhang (张正康), Ph.D. student at Xidian University. Discrete event systems, supervisory control theory, and generative AI search and recommendation."
 url: "https://zkzh0420.github.io"
 baseurl: ""
 
 author:
   name: "Zhengkang Zhang"
   name_cn: "张正康"
+  email_126: "zhzk0420@126.com"
+  email_edu: "zhengkang@stu.xidian.edu.cn"
   github: "https://github.com/zkzh0420"
-  email: ""
-  scholar: ""
-  cv: ""
+  scholar_google: "https://scholar.google.com/citations?user=n_Om_GEAAAAJ&hl=en&oi=sra"
+  orcid: "https://orcid.org/0009-0001-7125-314X"
 
 keywords:
   - Zhengkang Zhang
   - 张正康
   - academic homepage
-  - research
-  - GitHub Pages
+  - 个人主页
 
 markdown: kramdown
 highlighter: rouge

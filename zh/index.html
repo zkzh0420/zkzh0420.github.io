@@ -1,34 +1,101 @@
 ---
 layout: home
 title: "张正康 - 个人主页"
-description: "张正康的个人学术主页。"
+description: "张正康（Zhengkang Zhang），西安电子科技大学，博士生。离散事件系统，监督控制理论，AI生成式搜推。"
 lang: zh
 permalink: /zh/
 alt_url: /
 ---
 
-<section class="hero" id="about">
-  <img class="profile-photo" src="{{ '/img/Profile.jpg' | relative_url }}" alt="张正康">
-  <div class="hero-copy">
-    <p class="eyebrow">个人主页</p>
+<!-- Profile -->
+<section class="profile">
+  <img src="{{ '/images/Profile.jpg' | relative_url }}" alt="张正康" class="profile-photo">
+  <div class="profile-info">
     <h1>张正康</h1>
     <p class="name-cn">Zhengkang Zhang</p>
-    <p class="bio">
-      这是我的个人学术主页。我会在这里放置简要介绍、研究笔记和常用链接。
-    </p>
-    <p class="meta-links">
-      {% if site.author.github %}<a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-      {% if site.author.email %}<span class="sep">·</span> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% endif %}
-      {% if site.author.scholar %}<span class="sep">·</span> <a href="{{ site.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
-      {% if site.author.cv %}<span class="sep">·</span> <a href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener">CV</a>{% endif %}
+    <p class="title-line">博士生 西安电子科技大学</p>
+    <p class="affiliation">西安，中国</p>
+    <p class="contact">
+      邮箱：{{ site.author.email_126 }} &bull; {{ site.author.email_edu }}<br>
+      <a href="{{ site.author.orcid }}" target="_blank">ORCID</a>
+      &bull;
+      <a href="{{ site.author.scholar_google }}" target="_blank">Google Scholar</a>
+      &bull;
+      <a href="{{ site.author.github }}" target="_blank">Github</a>
     </p>
   </div>
 </section>
 
-<section class="section">
-  <h2>当前内容</h2>
-  <ul class="compact-list">
-    <li>研究方向、论文和项目笔记会在这里逐步补充。</li>
-    <li>以后需要的链接也可以直接放到这里。</li>
+<!-- Bio -->
+<p class="bio">
+  我目前在西安电子科技大学攻读博士研究生。研究方向包括：离散事件系统监督控制理论、自动机与Petri网理论与应用、信息攻击、大模型生成式推荐、大模型强化学习等。欢迎在这些方向上交流与合作。
+</p>
+
+<!-- Work Experience -->
+<section class="section" id="experience">
+  <h2>经历</h2>
+
+  <div class="entry">
+    <h3>算法实习生</h3>
+    <p class="meta"><a href="https://www.chaoxing.com/" target="_blank">超星集团 人工智能研发中心</a>，成都，2026.05 - 2026.08</p>
+    <p>面向数字图书馆与 App Agent 场景的大模型后训练：SFT 指令微调、语义向量召回与重排序、多意图识别及工具路由优化。</p>
+  </div>
+
+  <div class="entry">
+    <h3>访问学生</h3>
+    <p class="meta"><a href="https://www.math.cas.cz/" target="_blank">捷克科学院 数学研究所</a>，2024.09 - 2025.08</p>
+    <p class="meta">合作导师：<a href="https://www.math.cas.cz/index.php/members/researcher/50" target="_blank" rel="noopener">Jan Komenda</a></p>
+     <p>面向大规模系统网络安全的离散事件系统控制：基于掩码部分观测的分层模块化监督控制理论建模与关键问题求解。</p>
+  </div>
+</section>
+
+<!-- Education -->
+<section class="section" id="education">
+  <h2>教育经历</h2>
+
+  <div class="entry">
+    <h3>西安电子科技大学（XDU）</h3>
+    <p class="meta">博士，控制科学与工程，机电工程学院，2024 - 至今</p>
+    <p>导师：<a href="https://www.xidian.edu.cn/info/1020/3117.htm" target="_blank">李志武 教授</a>，IEEE Fellow</p>
+  </div>
+
+  <div class="entry">
+    <h3>西安电子科技大学（XDU）</h3>
+    <p class="meta">硕士，控制科学与工程，机电工程学院，2023 - 2024</p>
+    <p>导师：<a href="https://www.xidian.edu.cn/info/1020/3117.htm" target="_blank">李志武 教授</a>，IEEE Fellow</p>
+  </div>
+
+  <div class="entry">
+    <h3>陕西科技大学（SUST）</h3>
+    <p class="meta">学士，自动化，电气与控制工程学院，2019 - 2023</p>
+  </div>
+</section>
+
+<!-- Honors -->
+<section class="section" id="honors">
+  <h2>荣誉与奖项</h2>
+  <ul class="honors-list">
+    <li><span class="honor-year">2026</span> 国家留学基金委（CSC）- 创新型人才国际合作培养项目 资助</li>
+    <li><span class="honor-year">2024</span> 国家留学基金委（CSC）- 创新型人才国际合作培养项目 资助</li>
+    <li><span class="honor-year">2023</span> 陕西科技大学优秀毕业生 <span class="rank-badge">前 ~5%</span></li>
   </ul>
+</section>
+
+<!-- Publications -->
+<section class="section" id="publications">
+  <h2>代表性论文</h2>
+  <p style="font-size:0.85rem;color:#777;margin-top:-0.4rem;">
+    <sup>*</sup> 通讯作者
+  </p>
+  <div class="pub-entry">
+    <p class="pub-title">Hierarchical Supervisory Control of Discrete Event Systems: Normality Under Masks</p>
+    <p class="pub-authors"><strong>Zhengkang Zhang</strong>, Shaopeng Hu, Jan Komenda*, Zhiwu Li</p>
+    <p class="pub-venue">IEEE Transactions on Automatic Control &bull; <a href="{{ '/files/Hierarchical Supervisory Control of Discrete Event Systems_Normality Under Masks.pdf' | relative_url }}" target="_blank">[pdf]</a></p>
+  </div>
+
+  <div class="pub-entry">
+    <p class="pub-title">Modular Supervisory Control of Discrete Event Systems: Normality Under Masks</p>
+    <p class="pub-authors">Shaopeng Hu, <strong>Zhengkang Zhang</strong>, Jan Komenda*, Zhiwu Li</p>
+    <p class="pub-venue">Submitted &bull; <a href="{{ '/files/Modular Supervisory Control of Discrete Event Systems_Normality Under Masks.pdf' | relative_url }}" target="_blank">[pdf]</a></p>
+  </div>
 </section>
