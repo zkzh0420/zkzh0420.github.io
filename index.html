@@ -1,0 +1,33 @@
+---
+layout: home
+title: "Zhengkang Zhang - Academic Homepage"
+description: "Academic homepage of Zhengkang Zhang."
+lang: en
+alt_url: /zh/
+---
+
+<section class="hero" id="about">
+  <img class="profile-photo" src="{{ '/img/Profile.jpg' | relative_url }}" alt="Zhengkang Zhang">
+  <div class="hero-copy">
+    <p class="eyebrow">Academic Homepage</p>
+    <h1>Zhengkang Zhang</h1>
+    <p class="name-cn">张正康</p>
+    <p class="bio">
+      This is my personal academic homepage. I will use it for a concise profile, research notes, and selected links.
+    </p>
+    <p class="meta-links">
+      {% if site.author.github %}<a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if site.author.email %}<span class="sep">·</span> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% endif %}
+      {% if site.author.scholar %}<span class="sep">·</span> <a href="{{ site.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+      {% if site.author.cv %}<span class="sep">·</span> <a href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener">CV</a>{% endif %}
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Current Focus</h2>
+  <ul class="compact-list">
+    <li>Research directions, publications, and project notes will be added here.</li>
+    <li>Additional links can be placed here when needed.</li>
+  </ul>
+</section>

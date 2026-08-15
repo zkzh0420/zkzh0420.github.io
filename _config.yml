@@ -1,0 +1,33 @@
+title: "Zhengkang Zhang"
+description: "Academic homepage of Zhengkang Zhang."
+url: "https://zkzh0420.github.io"
+baseurl: ""
+
+author:
+  name: "Zhengkang Zhang"
+  name_cn: "张正康"
+  github: "https://github.com/zkzh0420"
+  email: ""
+  scholar: ""
+  cv: ""
+
+keywords:
+  - Zhengkang Zhang
+  - 张正康
+  - academic homepage
+  - research
+  - GitHub Pages
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE

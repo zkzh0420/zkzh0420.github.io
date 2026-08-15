@@ -1,0 +1,14 @@
+{% assign is_zh = false %}
+{% if page.lang == "zh" %}{% assign is_zh = true %}{% endif %}
+<nav class="site-nav">
+  <a href="{% if is_zh %}{{ '/zh/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="site-title">
+    {% if is_zh %}{{ site.author.name_cn }}{% else %}{{ site.author.name }}{% endif %}
+  </a>
+  <div class="nav-links">
+    {% if is_zh %}
+      <a href="{{ page.alt_url | default: '/' | relative_url }}" class="lang-toggle">EN</a>
+    {% else %}
+      <a href="{{ page.alt_url | default: '/zh/' | relative_url }}" class="lang-toggle">中文</a>
+    {% endif %}
+  </div>
+</nav>
