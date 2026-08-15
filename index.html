@@ -1,33 +1,100 @@
 ---
 layout: home
-title: "Zhengkang Zhang - Academic Homepage"
-description: "Academic homepage of Zhengkang Zhang."
+title: "Zhengkang Zhang - Personal Homepage"
+description: "Zhengkang Zhang, Ph.D. student at Xidian University. Discrete event systems, supervisory control theory, and generative AI search and recommendation."
 lang: en
 alt_url: /zh/
 ---
 
-<section class="hero" id="about">
-  <img class="profile-photo" src="{{ '/img/Profile.jpg' | relative_url }}" alt="Zhengkang Zhang">
-  <div class="hero-copy">
-    <p class="eyebrow">Academic Homepage</p>
+<!-- Profile -->
+<section class="profile">
+  <img src="{{ '/images/Profile.jpg' | relative_url }}" alt="Zhengkang Zhang" class="profile-photo">
+  <div class="profile-info">
     <h1>Zhengkang Zhang</h1>
     <p class="name-cn">张正康</p>
-    <p class="bio">
-      This is my personal academic homepage. I will use it for a concise profile, research notes, and selected links.
-    </p>
-    <p class="meta-links">
-      {% if site.author.github %}<a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-      {% if site.author.email %}<span class="sep">·</span> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% endif %}
-      {% if site.author.scholar %}<span class="sep">·</span> <a href="{{ site.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
-      {% if site.author.cv %}<span class="sep">·</span> <a href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener">CV</a>{% endif %}
+    <p class="title-line">Ph.D. Student, Xidian University</p>
+    <p class="affiliation">Xi'an, China</p>
+    <p class="contact">
+      Email: {{ site.author.email_126 }} &bull; {{ site.author.email_edu }}<br>
+      <a href="{{ site.author.orcid }}" target="_blank">ORCID</a>
+      &bull;
+      <a href="{{ site.author.scholar_google }}" target="_blank">Google Scholar</a>
+      &bull;
+      <a href="{{ site.author.github }}" target="_blank">Github</a>
     </p>
   </div>
 </section>
 
-<section class="section">
-  <h2>Current Focus</h2>
-  <ul class="compact-list">
-    <li>Research directions, publications, and project notes will be added here.</li>
-    <li>Additional links can be placed here when needed.</li>
+<!-- Bio -->
+<p class="bio">
+  I am currently pursuing a Ph.D. at Xidian University. My research interests include supervisory control theory for discrete event systems, automata and Petri net theory and applications, information attacks, generative recommendation with large language models, and reinforcement learning for large language models. I welcome discussions and collaboration in these areas.
+</p>
+
+<!-- Work Experience -->
+<section class="section" id="experience">
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <h3>Algorithm Intern</h3>
+    <p class="meta"><a href="https://www.chaoxing.com/" target="_blank">SuperStar Group, Artificial Intelligence R&amp;D Center</a>, Chengdu, 2026.05 - 2026.08</p>
+    <p>Worked on post-training large language models for digital library and App Agent scenarios, including SFT instruction tuning, semantic vector retrieval and reranking, multi-intent recognition, and tool routing optimization.</p>
+  </div>
+
+  <div class="entry">
+    <h3>Visiting Student</h3>
+    <p class="meta"><a href="https://www.math.cas.cz/" target="_blank">Institute of Mathematics, Czech Academy of Sciences</a>, 2024.09 - 2025.08</p>
+    <p class="meta">Host supervisor: <a href="https://www.math.cas.cz/index.php/members/researcher/50" target="_blank" rel="noopener">Jan Komenda</a></p>
+    <p>Studied discrete-event-system control for cybersecurity in large-scale systems, focusing on hierarchical and modular supervisory control under masked partial observation.</p>
+  </div>
+</section>
+
+<!-- Education -->
+<section class="section" id="education">
+  <h2>Education</h2>
+
+  <div class="entry">
+    <h3>Xidian University (XDU)</h3>
+    <p class="meta">Ph.D. in Control Science and Engineering, School of Mechano-Electronic Engineering, 2024 - Present</p>
+    <p>Advisor: <a href="https://www.xidian.edu.cn/info/1020/3117.htm" target="_blank">Prof. Zhiwu Li</a>, IEEE Fellow</p>
+  </div>
+
+  <div class="entry">
+    <h3>Xidian University (XDU)</h3>
+    <p class="meta">M.S. in Control Science and Engineering, School of Mechano-Electronic Engineering, 2023 - 2024</p>
+    <p>Advisor: <a href="https://www.xidian.edu.cn/info/1020/3117.htm" target="_blank">Prof. Zhiwu Li</a>, IEEE Fellow</p>
+  </div>
+
+  <div class="entry">
+    <h3>Shaanxi University of Science and Technology (SUST)</h3>
+    <p class="meta">B.E. in Automation, School of Electrical and Control Engineering, 2019 - 2023</p>
+  </div>
+</section>
+
+<!-- Honors -->
+<section class="section" id="honors">
+  <h2>Honors and Awards</h2>
+  <ul class="honors-list">
+    <li><span class="honor-year">2026</span> China Scholarship Council (CSC), International Cooperation and Training Program for Innovative Talents</li>
+    <li><span class="honor-year">2024</span> China Scholarship Council (CSC), International Cooperation and Training Program for Innovative Talents</li>
+    <li><span class="honor-year">2023</span> Outstanding Graduate, Shaanxi University of Science and Technology <span class="rank-badge">Top ~5%</span></li>
   </ul>
+</section>
+
+<!-- Publications -->
+<section class="section" id="publications">
+  <h2>Selected Publications</h2>
+  <p style="font-size:0.85rem;color:#777;margin-top:-0.4rem;">
+    <sup>*</sup> Corresponding author
+  </p>
+  <div class="pub-entry">
+    <p class="pub-title">Hierarchical Supervisory Control of Discrete Event Systems: Normality Under Masks</p>
+    <p class="pub-authors"><strong>Zhengkang Zhang</strong>, Shaopeng Hu, Jan Komenda*, Zhiwu Li</p>
+    <p class="pub-venue">IEEE Transactions on Automatic Control &bull; <a href="{{ '/files/Hierarchical Supervisory Control of Discrete Event Systems_Normality Under Masks.pdf' | relative_url }}" target="_blank">[pdf]</a></p>
+  </div>
+
+  <div class="pub-entry">
+    <p class="pub-title">Modular Supervisory Control of Discrete Event Systems: Normality Under Masks</p>
+    <p class="pub-authors">Shaopeng Hu, <strong>Zhengkang Zhang</strong>, Jan Komenda*, Zhiwu Li</p>
+    <p class="pub-venue">Submitted &bull; <a href="{{ '/files/Modular Supervisory Control of Discrete Event Systems_Normality Under Masks.pdf' | relative_url }}" target="_blank">[pdf]</a></p>
+  </div>
 </section>
